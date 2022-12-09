@@ -1,6 +1,4 @@
 <?php
-use PhpAmqpLib\Connection\AMQPStreamConnection;
-use PhpAmqpLib\Message\AMQPMessage;
 
 // increase the memory limit
 ini_set('memory_limit', '1024M');

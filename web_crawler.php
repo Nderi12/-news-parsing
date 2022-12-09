@@ -29,7 +29,7 @@ foreach ($urls as $url) {
         preg_match_all('/<a\s+href="(https?:\/\/\S+)"/', $data[$url], $matches);
         $links = $matches[1];
         foreach ($links as $link) {
-            // check if linkn has string asrticle in it
+            // check if link has string article in it
             if (strpos($link, 'article') !== false) {
                 preg_match_all('/https?:\/\/\S+/', $link, $matches);
                 $newLinks[]= $matches[0];
