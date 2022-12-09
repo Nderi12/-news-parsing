@@ -11,6 +11,12 @@
       <li class="nav-item active">
         <a class="nav-link" href="/news/articles_list.php">Articles </a>
       </li>
+      <li>
+        <a href="reset.php" class="btn btn-warning btn-sm">Reset Your Password</a>
+      </li>
+      <li>
+          <a href="logout.php" class="btn btn-danger btn-sm ml-3">Sign Out of Your Account</a>
+      </li>
     </ul>
   </div>
 </nav>
