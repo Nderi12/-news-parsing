@@ -42,7 +42,7 @@ foreach ($urls as $url) {
     $date_added = date('Ymd');
 
     // create the directory path
-    $path = 'scrap/'.$date_added.'/';
+    $path = 'scrap-links/'.$date_added.'/';
 
     // check if the directory path exists
     if (!file_exists($path)) {
@@ -59,7 +59,7 @@ foreach ($urls as $url) {
 
             // save the content of each link to a specific file using file_get_contents
             $content=file_get_contents($l);
-            $file=fopen('scrap/'.$date_added.'/'.$random_file_name.'.html', 'w');
+            $file=fopen('scrap-links/'.$date_added.'/'.$random_file_name.'.html', 'w');
             fwrite($file, $content);
             fclose($file);
         }

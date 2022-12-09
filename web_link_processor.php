@@ -2,7 +2,7 @@
 
 // increase the memory limit
 ini_set('memory_limit', '1024M');
-$path= 'scrap/';
+$path= 'scrap-links/';
 $date_added = date('Ymd');
 
 // read all the files in the directory
