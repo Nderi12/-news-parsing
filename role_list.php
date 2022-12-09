@@ -17,12 +17,8 @@
 
   <!-- TO DO:  -->
   <!-- 1.1: Manage users, Manage roles, manage user roles/Assign permissions, -->
-  <div class="col-md-8 col-md-offset-2">
-    <a href="roleForm.php" class="btn btn-success">
-      <span class="glyphicon glyphicon-plus"></span>
-      Create new role
-    </a>
-    <hr>
+  <div class="col-md-12 col-md-offset-2">
+    
 
     <h1 class="text-center">Roles</h1>
     <br />
@@ -33,6 +29,7 @@
           <tr>
             <th>N</th>
             <th>Role name</th>
+            <th>Description</th>
             <th colspan="3" class="text-center">Action</th>
           </tr>
         </thead>
@@ -41,21 +38,12 @@
             <tr>
               <td><?php echo $key + 1; ?></td>
               <td><?php echo $value['name'] ?></td>
-              <td class="text-center">
+              <td><?php echo $value['description'] ?></td>
+              <!-- <td class="text-center">
                 <a href="<?php echo BASE_URL ?>admin/roles/assignPermissions.php?assign_permissions=<?php echo $value['id'] ?>" class="btn btn-sm btn-info">
                   permissions
                 </a>
-              </td>
-              <td class="text-center">
-                <a href="<?php echo BASE_URL ?>admin/roles/roleForm.php?edit_role=<?php echo $value['id'] ?>" class="btn btn-sm btn-success">
-                  <span class="glyphicon glyphicon-pencil"></span>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="<?php echo BASE_URL ?>admin/roles/roleForm.php?delete_role=<?php echo $value['id'] ?>" class="btn btn-sm btn-danger">
-                  <span class="glyphicon glyphicon-trash"></span>
-                </a>
-              </td>
+              </td> -->
             </tr>
           <?php endforeach; ?>
         </tbody>
